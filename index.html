@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      :root {
+        --clr-first-: #1155cc;
+        --clr-second: #ff5e00;
+        --clr-third: #ebcbae;
+      }
+      body {
+        margin: 0;
+        min-width: 100%;
+        padding: 0;
+        background: #dde0e1;
+        font-family: "Poppins", sans-serif;
+      }
+      table {
+        border-spacing: 0;
+      }
+      td {
+        padding: 0;
+      }
+      .wrapper {
+        width: 100%;
+        max-width: 600px;
+        table-layout: fixed;
+        background: #fff;
+        margin: 0 auto;
+      }
+      .main {
+        width: 100%;
+        padding: 0;
+      }
+      .two-columns {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .column {
+        display: inline-block;
+        vertical-align: top;
+      }
+      .content {
+        display: inline-block;
+        vertical-align: top;
+      }
+      .padding {
+        padding: 0 50px;
+      }
+      .main-text {
+        font-size: 2.1rem;
+
+        width: 90%;
+        padding: 0;
+        margin: 0;
+      }
+
+      .btn {
+        padding: 0.5rem 3.5rem;
+        background: #ff5e00;
+        border: 2px solid #ff5e00;
+        border-radius: 6px;
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .gray-text {
+        font-size: 0.9rem;
+        color: #6e7677;
+      }
+
+      @media (max-width: 535px) {
+        .btn {
+          font-size: 1rem;
+          padding: 0.2rem 2rem;
+          height: 2rem;
+        }
+        .main-text {
+          font-size: 1.8rem;
+        }
+      }
+      @media (max-width: 456px) {
+        .main-text {
+          font-size: 1.3rem;
+        }
+        .btn {
+          padding: 0.08rem 1rem;
+        }
+      }
+      @media (max-width: 415px) {
+        .btn {
+          font-size: 0.7rem;
+          padding: 0.05rem 0.7rem;
+        }
+      }
+      @media (max-width: 385px) {
+        .main-text {
+          font-size: 1rem;
+        }
+        .btn {
+          font-size: 0.5rem;
+          padding: 0.05rem 0.7rem;
+        }
+      }
+      /* Custom Dark Mode Colors */
+
+      @media (prefers-color-scheme: dark) {
+      }
+    </style>
+  </head>
+  <body>
+    <center class="wrapper">
+      <table class="main">
+        <!--space-->
+        <tr>
+          <td
+            style="
+              background: #ebcbae;
+              height: 30px;
+              width: 100%;
+              max-width: 600px;
+            "
+          ></td>
+        </tr>
+        <!--credit karma-->
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td style="background: #ebcbae; padding: 0 50px; height: 0">
+                  <img
+                    src="/CreditKarmaImage/creditKarma.png"
+                    alt="credit karma"
+                    width="100px"
+                    style="max-width: 100px"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!--You've gone over your credit limit-->
+        <tr>
+          <td>
+            <table width="100%" style="background: #ebcbae">
+              <tr>
+                <td class="two-columns">
+                  <table class="column">
+                    <tr>
+                      <td class="padding">
+                        <table class="content">
+                          <tr>
+                            <td style="height: 0">
+                              <p class="main-text">
+                                You've gone over your credit limit. Now what?
+                              </p>
+                            </td>
+                            <td rowspan="3">
+                              <img
+                                src="/CreditKarmaImage/paper.png"
+                                width="100%"
+                                style="max-width: 600px"
+                              />
+                            </td>
+                          </tr>
+                          <!--space-->
+
+                          <!--button-->
+                          <tr>
+                            <td style="height: 0">
+                              <a href="#" class="btn">See your balance</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--space-->
+        <tr>
+          <td style="background: #ebcbae; height: 30px"></td>
+        </tr>
+        <!--Greeting Visay Paragraph-->
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td class="padding paragraph">
+                  <p>Hey Visay,</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="padding paragraph">
+                  <p>
+                    It looks like the balance on your JPMCB card is higher than
+                    your credit limit.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="padding paragraph">
+                  <p>
+                    Getting back on track isn't always easy but don't be
+                    discouraged because there are steps you can take to help.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--opt out-->
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td class="two-columns">
+                  <table width="100%" class="column">
+                    <tr>
+                      <td>
+                        <table class="content padding">
+                          <tr>
+                            <td>
+                              <img
+                                src="/CreditKarmaImage/circleX.png"
+                                alt="circle x"
+                                width="100%"
+                                style="max-width: 600px"
+                              />
+                            </td>
+                            <td style="padding: 0 0 0 20px">
+                              <h3>Opt-Out</h3>
+                              <p>
+                                Turn off over-the-limit coverage. This lets your
+                                credit card issuer know that you don't authorize
+                                any additional transactions that will exceed
+                                your available credit.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img
+                                src="/CreditKarmaImage/paydown.png"
+                                alt="pay down"
+                                width="100%"
+                                style="max-width: 600px"
+                              />
+                            </td>
+                            <td style="padding: 0 0 0 20px">
+                              <h3>Pay down overage</h3>
+                              <p>
+                                Pay down your card balance until it's below your
+                                credit limit again. This way you won't be hit
+                                with fees each billing cycle.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img
+                                src="/CreditKarmaImage/increaseLine.png"
+                                alt="pay down"
+                                width="100%"
+                                style="max-width: 600px"
+                              />
+                            </td>
+                            <td style="padding: 0 0 0 20px">
+                              <h3>Increase credit limit</h3>
+                              <p>
+                                For a longer-term fix, request a credit limit
+                                increase. You can often request an increase with
+                                a quick phone call or online.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--Paragraph-->
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td class="padding" style="font-size: 1.2rem">
+                  <p>
+                    Check in to get a closer look at your account and see what
+                    else you can do to improve your credit health.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--space-->
+        <tr>
+          <td style="height: 30px"></td>
+        </tr>
+        <!--Orange Button-->
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td class="padding">
+                  <a href="#" class="btn">See your balance</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--credit report-->
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td class="padding" style="padding-top: 1rem">
+                  <p class="gray-text">
+                    *Based on your credit report information from TransUnion as
+                    reported on 2022-10-06.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!--footer-->
+        <tr>
+          <td>
+            <table width="100%" style="background: #3333; padding-bottom: 30px">
+              <tr>
+                <td class="padding">
+                  <p class="gray-text">
+                    This is a promotional email. To manage your email
+                    preferences, please go to notification preferences.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="padding">
+                  <a
+                    href="#"
+                    style="
+                      color: blue;
+                      text-decoration: none;
+                      font-size: 0.9rem;
+                    "
+                  >
+                    <p>Unsubscribe from all emails</p>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="padding">
+                  <a
+                    href="#"
+                    style="
+                      color: blue;
+                      text-decoration: none;
+                      font-size: 0.9rem;
+                    "
+                  >
+                    <p>
+                      Unsubscribe from all emails primarily about accounts
+                      monitoring
+                    </p>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="padding">
+                  <p class="gray-text">
+                    Credit Karma, LLC, P.O. Box 30963, Oakland, CA 94604
+                    Copyright © 2008-2022 Credit Karma, LLC. All Rights
+                    Reserved. Any third party trademarks referenced are the
+                    property of their respective owners.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="padding">
+                  <p class="gray-text">
+                    Note: Never share your online banking or Credit Karma
+                    passwords with anyone, including us!
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="padding">
+                  <a
+                    href="#"
+                    style="
+                      color: blue;
+                      text-decoration: none;
+                      font-size: 0.9rem;
+                    "
+                  >
+                    <p>Privacy <span>|</span> Terms of Service</p>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
